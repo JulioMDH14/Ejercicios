@@ -1,15 +1,13 @@
 #3. Adivina un número (fácil)
 
 numero_oculto = 14
-pregunta = int(input('¿Cuál es el número oculto? '))
-acierto = False
+acierto = True
 #Intentos infinitos
-while acierto:
+while acierto == True:
+    pregunta = int(input('¿Cuál es el número oculto? '))
     if pregunta == numero_oculto:
         acierto = True
+        print('Has acertado!!')
         break;
-
-if acierto == True:
-    print('¡Has acertado!')
-else:
-    print('No has acertado')
+    else:
+        print('Sigue intentandolo!!')
