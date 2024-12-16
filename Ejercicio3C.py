@@ -10,4 +10,8 @@ while acierto == True:
         print('Has acertado!!')
         break;
     else:
+<<<<<<< HEAD
         print('Sigue intentandolo!!')
+=======
+        print('Sigue intentandolo!!')
+>>>>>>> 51c924ae2a85b86038f3449bb5eb4bf17ca1c668
