@@ -1,3 +1,4 @@
 asigntaturas = ["Matemáticas","Física","Química","Historia","Lengua"]
+print("Yo estudio:", end=" ") 
 for asignatura in asigntaturas:
-    print(f"Yo estudio {asignatura}, donde {asignatura} es cada una de las asignaturas de la lista")
+    print(asignatura, end=", ")

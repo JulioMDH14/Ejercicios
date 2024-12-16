@@ -1,8 +1,8 @@
-#8. Factorial
+frase = input("Introduce una frase: ")
 
-numero = int(input('Introduce un número: '))
-factorial = 1;
-for n in range(1, numero+1):
-    factorial = factorial * n
+frase2 = (frase.lower()).replace(' ','')
 
-print(f"El factorial de {numero} es {factorial}")
+if frase2 == frase2[::-1]:
+    print("La frase ", frase2 , " es un palindromo")
+else:
+    print("No son palindromos")
