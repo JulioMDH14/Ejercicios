@@ -1,11 +1,15 @@
-#6. Número mayor
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
 
-numero1 = float(input('Introduce el primer número: '))
-numero2 = float(input('Introduce el segundo número: '))
+asignaturas_repetir = []
 
-if numero1 > numero2:
-    print('El primer número es el mayor')
-elif numero1 < numero2:
-    print('El segundo número es el mayor')
+for asignatura in asignaturas:
+    nota = float(input(f"¿Que nota has sacado en {asignatura}?: "))
+    if nota < 5:
+        asignaturas_repetir.append(asignatura)
+
+if asignaturas_repetir:
+    print("Las asignaturas que tienes que repetir son:")
+    for asignatura in asignaturas_repetir:
+        print(asignatura)
 else:
-    print('Los dos números son iguales')
+    print("Has aprobado todo!!")
